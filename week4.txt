@@ -1,0 +1,39 @@
+//Scope Rules - ของเขตของตัวแปร//
+Local Variables ตัวแปรถูกประกาศไว้ใน block หรือภายในฟังก์ชัน
+Global Variables - ถูกประกาศไว้นอกฟังก์ชัน สามารถเข้าถึงได้จากทุกฟังก์ชันต่างๆซึ่งรวมถึงฟังก์ชัน main
+
+//Math Library// 
+pow(x,y) - ตัวแปร x ยกกำลัตัวแปร y
+fabs(x) - หาค่าสัมบูรณ์ของตัวแปร x
+sqrt(x) - หาค่ารากที่ 2 หรือตัวแปร x
+ceil(x) - ปัดเศษทศนิยมของตัวแปร x ขึ้น
+floor(x) - ตัดเศษทศนิยมของตัวแปร x ทิ้ง
+log10(x) - หาค่า log ฐาน 10 ของตัวแปร x
+
+//Functions: Pass by Value// ส่งค่าไปยังฟังก์ชัน ใช้งานได้เลย
+- การส่งค่าของข้อมูล parameter จากผู้เรียกไปยังฟังก์ชันเรียกว่า pass by value
+- การคืนค่าออกมาเพื่อเอาไปใช้ต่อเราใช้ฟังก์ชัน return หากไม่มีการคืนค่าอาจใช้ฟังก์ชัน void
+ลักษณะ
+- ก็อปปี้ค่าของตัวแปรจากผู้เรียกไปให้ฟังก์ชัน
+- สร้างตัวแปร local variable ใหม่ในฟังก์ชัน
+- การเปลี่ยนแปลงค่าในฟังก์ชันไม่ส่งผลถึงตัวแปรต้นตํารับ
+
+#include <stdio.h>
+int isEven(int val){
+    if (val % 2 == 0)
+        return 1;
+    else
+        return 0;
+}
+int main(){ 
+    int value;
+    printf("Enter an Integer Value: ");
+    scanf("%d", &value);
+    if (isEven(value) == 1)
+        printf("%d is an even number\n", value);
+    else
+        rintf("%d is not an even number\n", value);
+}
+
+จากการเขียนโปรแกรมด้านบนจะได้ว่าฟังก์ชัน isEven มีเพื่อเช็คว่าค่าที่ส่งเข้าไปผ่านพารามิเตอ val เป็นจำนวนคู่หรือไม่
+
