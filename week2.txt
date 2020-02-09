@@ -1,0 +1,40 @@
+//ตัวแปร// 
+การประกาศตัวแปรคล้ายๆ python 
+int / long / long long
+float / double 
+char
+
+//การแสดงผล//
+stdio.h
+ใช้ printf() / puts()
+%d %i %f
+%06d - 6 ช่อง หากไม่ครบเติม 0 ข้างหน้า
+%.2f - ทศนิยม 2 ตำแหน่ง
+%c - char
+%s - char string
+
+//Operators / Expressions//
+* / %
++ - 
+== != 
+& - and
+^ - xor
+| - or
+&& - and (เปรียบเทียบ)
+
+//Character Input and Output//
+getchar() / putchar()
+x = getchar() - ใช้รับอักขระ 1 ตัวจาก stdin
+putchar(x) - ส่ง x ไป stdout
+
+gets()/fgets() - รับ input เหมือนกัน แต่ fgets กำหนดขนาดและกำหนดว่ารับจากไหนได้
+char a[10];
+gets(a); // รับค่าเก็บในตัวแปร a
+char b[10];
+fgets(b,5,stdin);
+
+//การแปลง type ของ input//
+stdlib.h
+เมื่อเรารับค่า input จากฟังชั่น gets fgets เราจะรับมาเป็น char ซึงเราสามารถแปลงเป็น int float long ได้
+atoi / atol / atof โดยต้องใส่ตัวแปรใหม่เช่น
+int new_a = atoi(a); // แปลงค่า char ใน a เป็น int
