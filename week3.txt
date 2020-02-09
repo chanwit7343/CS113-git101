@@ -1,0 +1,35 @@
+
+//Control Flow//
+expression เป็น statement เมื่อมี ;
+Blocks - ภายในปีกกา {}
+
+if else - เหมือนในไพท่อน เป็นรูปแบบเงื่อนไข รูปแบบดังนี้
+int x = 5;
+if (x == 10) {
+    printf("Yes");
+} else if (x == 5){
+    printf("Haha");
+} eles {
+    printf("No");
+}
+
+Switch - เป็นการตรวจสอบเงื่อนไขที่ดูว่าค่านั้นเข้ากับ case ใด แล้วจะกระโดดไปทำ case นั้นทันทีจนกวาจะเจอ break แล้วจะหลุดจาก switch
+switch (expression) {
+    case const-expr:
+        statements
+    case const-expr:
+        statements
+    default:
+        statements
+}
+
+Loops - While และ For
+คล้ายใน python เป็นการเช็คเงื่อนไข หากเงื่อนไขเป็นจริงจะวนลูป เช่น
+int x = 5,count = 0;
+while (count < x ){
+    printf("%d",count);
+    count++;
+}
+for (int i = 0; i<x; i++){
+    printf("%d",i);
+}
